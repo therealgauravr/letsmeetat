@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+    @font-face {
+      font-family: "Satoshi-Regular";
+      src: url("$lib/fonts/Satoshi-Regular.otf");
+    }
+  
+    @font-face {
+      font-family: "Satoshi-Bold";
+      src: url("$lib/fonts/Satoshi-Bold.otf");
+    }
+  
+    @font-face {
+      font-family: "Satoshi-Black";
+      src: url("$lib/fonts/Satoshi-Black.otf");
+    }
+  
+    @font-face {
+      font-family: "Satoshi-Medium";
+      src: url("$lib/fonts/Satoshi-Medium.otf");
+    }
+  }
+
+
+  * {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /*
+    Customization for Safari bug that prevents input selection due to webkit-use-select : none setting 
+  */
+  input,
+  textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+  
+  
+  *::-webkit-scrollbar {
+    display: none;
+  }
